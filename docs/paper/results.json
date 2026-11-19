@@ -1,0 +1,291 @@
+{
+  "eia": {
+    "crestLat": 25,
+    "crestFoF2": 11.05,
+    "troughLat": 8,
+    "troughFoF2": 5.13
+  },
+  "storm": [
+    {
+      "storm": 0,
+      "standard": 98.4,
+      "india": 2.5
+    },
+    {
+      "storm": 0.1,
+      "standard": 117.6,
+      "india": 3.4
+    },
+    {
+      "storm": 0.2,
+      "standard": 136.4,
+      "india": 4.2
+    },
+    {
+      "storm": 0.3,
+      "standard": 154.9,
+      "india": 4.9
+    },
+    {
+      "storm": 0.4,
+      "standard": 173.1,
+      "india": 5.6
+    },
+    {
+      "storm": 0.5,
+      "standard": 190.7,
+      "india": 6.2
+    },
+    {
+      "storm": 0.6,
+      "standard": 208,
+      "india": 6.8
+    },
+    {
+      "storm": 0.7,
+      "standard": 224.7,
+      "india": 7.3
+    },
+    {
+      "storm": 0.8,
+      "standard": 240.9,
+      "india": 7.7
+    },
+    {
+      "storm": 0.9,
+      "standard": 256.6,
+      "india": 8.1
+    },
+    {
+      "storm": 1,
+      "standard": 271.7,
+      "india": 8.5
+    }
+  ],
+  "timeOfDay": [
+    {
+      "ist": 6,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 6.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 7,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 7.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 8,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 8.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 9,
+      "standard": 25.5,
+      "india": 0.7
+    },
+    {
+      "ist": 9.5,
+      "standard": 2.9,
+      "india": 0.5
+    },
+    {
+      "ist": 10,
+      "standard": 23.3,
+      "india": 0.4
+    },
+    {
+      "ist": 10.5,
+      "standard": 40.3,
+      "india": 1.5
+    },
+    {
+      "ist": 11,
+      "standard": 54.6,
+      "india": 2.3
+    },
+    {
+      "ist": 11.5,
+      "standard": 66.7,
+      "india": 2.7
+    },
+    {
+      "ist": 12,
+      "standard": 76.5,
+      "india": 2.6
+    },
+    {
+      "ist": 12.5,
+      "standard": 84.3,
+      "india": 1.9
+    },
+    {
+      "ist": 13,
+      "standard": 90.1,
+      "india": 0.7
+    },
+    {
+      "ist": 13.5,
+      "standard": 94.3,
+      "india": 0.5
+    },
+    {
+      "ist": 14,
+      "standard": 97,
+      "india": 1.7
+    },
+    {
+      "ist": 14.5,
+      "standard": 98.4,
+      "india": 2.5
+    },
+    {
+      "ist": 15,
+      "standard": 98.6,
+      "india": 2.8
+    },
+    {
+      "ist": 15.5,
+      "standard": 97.6,
+      "india": 2.5
+    },
+    {
+      "ist": 16,
+      "standard": 95.2,
+      "india": 1.8
+    },
+    {
+      "ist": 16.5,
+      "standard": 91,
+      "india": 0.7
+    },
+    {
+      "ist": 17,
+      "standard": 84.4,
+      "india": 0.5
+    },
+    {
+      "ist": 17.5,
+      "standard": 74.3,
+      "india": 1.4
+    },
+    {
+      "ist": 18,
+      "standard": 58.8,
+      "india": 1.9
+    },
+    {
+      "ist": 18.5,
+      "standard": 31.9,
+      "india": 1.8
+    },
+    {
+      "ist": 19,
+      "standard": 42,
+      "india": 0.7
+    },
+    {
+      "ist": 19.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 20,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 20.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 21,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 21.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 22,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 22.5,
+      "standard": null,
+      "india": null
+    },
+    {
+      "ist": 23,
+      "standard": null,
+      "india": null
+    }
+  ],
+  "compare": {
+    "0": {
+      "india": {
+        "s": 98.4,
+        "i": 2.5
+      },
+      "europe": {
+        "s": 1.5,
+        "i": 1.5,
+        "ok": true,
+        "muf": null
+      }
+    },
+    "1": {
+      "india": {
+        "s": 271.7,
+        "i": 8.5
+      },
+      "europe": {
+        "s": null,
+        "i": null,
+        "ok": false,
+        "muf": 5.5
+      }
+    }
+  },
+  "map": {
+    "cells": 908,
+    "medianStandard": 267.2,
+    "medianIndia": 5.5,
+    "p90Standard": 532.4,
+    "fracGoodStandard": 0.12,
+    "fracGoodIndia": 1
+  },
+  "headline": {
+    "el": 18.2,
+    "az": 120.8,
+    "h": 228,
+    "muf": 14.4,
+    "dist": 1175,
+    "ellipseStandard": [
+      215,
+      48
+    ],
+    "ellipseIndia": [
+      234,
+      53
+    ]
+  }
+}

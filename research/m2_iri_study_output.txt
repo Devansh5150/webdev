@@ -1,0 +1,37 @@
+Example path, 14:30 IST, F10.7 140, truth = IRI(+storm,+TID)
+month storm |   el    h' | standard  v1-India   IRI
+   1    0   |  21.7   272 |   236      161       2
+   1    1   |  25.2   318 |   345       91       9
+   3    0   |  20.8   260 |   202      121       2
+   3    1   |  24.3   306 |   319       56       9
+   6    0   |  22.6   284 |   267      199       2
+   6    1   |  26.2   332 |   371      129       8
+   9    0   |  20.8   260 |   204      123       2
+   9    1   |  24.3   307 |   320       58       9
+  10    0   |  21.3   267 |   223      146       2
+  10    1   |  24.8   313 |   334       76       9
+  12    0   |  20.6   258 |   197      114       2
+  12    1   |  24.2   304 |   315       51       9
+
+March, quiet: IST -> standard / v1-India / IRI
+   8:00    -     -       3
+  10:00     65    49     1
+  12:00    205   153     2
+  14:00    211   133     2
+  16:00    167    84     2
+  18:00     76    24     2
+  20:00    -     -       1
+  22:00    -     -       3
+
+Map over India, 0.8xMUF (March 14:30 IST, quiet, 2 deg, 1 hop): 237 cells with a real path
+  standard  fix available   0%   median error n/a   good(<50 km) n/a
+  v1india   fix available  48%   median error 109 km   good(<50 km) 0%
+  iri       fix available 100%   median error 4 km   good(<50 km) 100%
+
+Map over India, 7.2MHz (March 14:30 IST, quiet, 2 deg, 1 hop): 237 cells with a real path
+  standard  fix available 100%   median error 212 km   good(<50 km) 5%
+  v1india   fix available 100%   median error 171 km   good(<50 km) 3%
+  iri       fix available 100%   median error 9 km   good(<50 km) 100%
+  control pt IRI       foF2=14.77 hmF2=342 ym=85
+  control pt v1-India  foF2=8.41 hmF2=327 ym=111
+  control pt standard  foF2=6.94 hmF2=285 ym=95

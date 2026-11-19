@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HF Single-Station Locator · India</title>
+  <meta name="description" content="Interactive 3D research tool: how India's equatorial ionization anomaly degrades HF single-station location, and how an India-adjusted ionosphere model corrects it.">
+  <meta name="theme-color" content="#05080f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305080f'/%3E%3Cpath d='M5 24 Q16 2 27 24' fill='none' stroke='%23ffb547' stroke-width='2.5'/%3E%3Ccircle cx='5' cy='24' r='3' fill='%23ff6f61'/%3E%3Ccircle cx='27' cy='24' r='3' fill='%2338d6f5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#controls">Skip to controls</a>
+  <header class="top">
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <div>
+        <p class="brand__name">HF Single-Station Locator <span class="brand__tag">India · v1</span></p>
+        <p class="brand__sub">How the equatorial ionization anomaly bends HF direction finding, and how an India-adjusted model fixes it</p>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Views">
+      <a href="#forward" data-view="forward"><span class="tabs__k">1</span>Forward</a>
+      <a href="#inverse" data-view="inverse"><span class="tabs__k">2</span>Inverse</a>
+      <a href="#storm" data-view="storm"><span class="tabs__k">3</span>Quiet vs storm</a>
+      <a href="#compare" data-view="compare"><span class="tabs__k">4</span>India vs Europe</a>
+    </nav>
+  </header>
+
+  <div class="app">
+    <aside class="panel panel--left" id="controls" aria-label="Scenario controls" tabindex="-1">
+      <p class="view-intro" id="view-intro"></p>
+      <form id="form" novalidate autocomplete="off"></form>
+    </aside>
+
+    <main class="stage" aria-label="3D globe">
+      <canvas id="globe" aria-label="3D globe showing the ionosphere, transmitter, DF station and signal paths. Use the controls panel to change the scenario." role="img"></canvas>
+      <div class="stage__top">
+        <div class="place" id="place" role="group" aria-label="Click on the globe to place">
+          <span class="place__label">Click globe to place</span>
+          <button type="button" data-place="tx" class="place__btn place__btn--tx">Transmitter</button>
+          <button type="button" data-place="st" class="place__btn place__btn--st">DF station</button>
+          <button type="button" data-place="off" class="place__btn">Off</button>
+        </div>
+        <div class="stage__right">
+          <div class="busy" id="busy" hidden>computing…</div>
+          <div class="cam" role="group" aria-label="Camera">
+            <button type="button" data-cam="tilt" aria-pressed="true">Tilted</button>
+            <button type="button" data-cam="top" aria-pressed="false">Top-down</button>
+          </div>
+          <aside class="key" id="key" aria-label="Key to the 3D view">
+            <button type="button" class="key__toggle" id="key-toggle" aria-expanded="true" aria-controls="key-list">Key</button>
+            <ul class="key__list" id="key-list" role="list"></ul>
+          </aside>
+        </div>
+      </div>
+      <div class="hover" id="hover" aria-hidden="true"></div>
+      <p class="caveat"><strong>Simplified, illustrative ionosphere (v1).</strong> Not IRI. All coordinates are examples. Heights exaggerated ×<span id="cav-exag">8</span>.</p>
+    </main>
+
+    <aside class="panel panel--right" id="results" aria-label="Results" aria-live="polite"></aside>
+  </div>
+</body>
+<script type="module" src="/src/main.js"></script>
+</html>

@@ -1,0 +1,90 @@
+{
+ "source": "PyIRI 0.1.7 IRI_monthly_mean_par, CCIR foF2 coefficients, IGRF year 2026",
+ "citation": "Forsythe et al. (2024), Space Weather, doi:10.1029/2023SW003739",
+ "generated": "2026-11-19T03:26:56Z",
+ "ut": [
+  0.0,
+  1.0,
+  2.0,
+  3.0,
+  4.0,
+  5.0,
+  6.0,
+  7.0,
+  8.0,
+  9.0,
+  10.0,
+  11.0,
+  12.0,
+  13.0,
+  14.0,
+  15.0,
+  16.0,
+  17.0,
+  18.0,
+  19.0,
+  20.0,
+  21.0,
+  22.0,
+  23.0
+ ],
+ "levels": {
+  "solar_index": "IG12",
+  "min": 0,
+  "max": 100
+ },
+ "params": {
+  "fo": {
+   "scale": 1000.0
+  },
+  "hm": {
+   "scale": 100.0
+  },
+  "bb": {
+   "scale": 500.0
+  }
+ },
+ "param_notes": {
+  "fo": "foF2 MHz",
+  "hm": "hmF2 km",
+  "bb": "B_F2_bot km (Epstein bottomside thickness; parabolic ym ~ 2*bb)"
+ },
+ "order": "for grid in grids: for param in [fo, hm, bb]: for level in [min, max]: uint16[nt][nlat][nlon]",
+ "grids": [
+  {
+   "name": "india",
+   "lat0": -15.0,
+   "dlat": 1.0,
+   "nlat": 61,
+   "lon0": 55.0,
+   "dlon": 1.0,
+   "nlon": 56,
+   "offset_values": 0
+  },
+  {
+   "name": "global",
+   "lat0": -90.0,
+   "dlat": 5.0,
+   "nlat": 37,
+   "lon0": -180.0,
+   "dlon": 5.0,
+   "nlon": 73,
+   "offset_values": 491904
+  }
+ ],
+ "files": {
+  "1": "iri_m01.bin",
+  "2": "iri_m02.bin",
+  "3": "iri_m03.bin",
+  "4": "iri_m04.bin",
+  "5": "iri_m05.bin",
+  "6": "iri_m06.bin",
+  "7": "iri_m07.bin",
+  "8": "iri_m08.bin",
+  "9": "iri_m09.bin",
+  "10": "iri_m10.bin",
+  "11": "iri_m11.bin",
+  "12": "iri_m12.bin"
+ },
+ "values_per_file": 880848
+}
